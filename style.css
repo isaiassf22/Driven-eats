@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400&display=swap');
+body{
+    /*a cada 10 px sera considerada 1 rem*/
+    font-size: 62.5%;
+    min-height: 120vh;
+    font-family: 'Roboto', sans-serif;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   
+}
+
+header,main,footer{
+    width: 60vw;    
+}
+
+
+header{
+    position: fixed;
+    min-height: 15vh;
+    background-color: red;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.tittle{
+    font-size: 4.4rem;
+}
+header :nth-child(2){
+    font-size: 1.8rem;
+}
+.tittle{
+    font-family: 'Righteous', cursive;
+}
+
+main{
+    margin: 15vh 0;
+   
+    min-height: 90vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+main section{
+    margin-bottom: 2vh;
+}
+section .container{
+    display: flex;
+    overflow-x: scroll;
+    min-height: 30vh;
+}
+section .box{
+    min-width: 25vw;
+    min-height: 30vh;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    text-align: start;
+}
+section .verde{
+    border: 3px solid green;
+}
+.box img{
+    margin: 5% auto;
+    width: 85%;
+    height: 60%;
+}
+.box p{
+    margin-left: 8%;
+}
+.box p{
+    font-size: 0.8rem;
+    margin-bottom: 1%;
+}
+.box .bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.box .price{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 15vh;
+    background-color: white;
+    border: 1px solid rgba(163, 163, 163, 0.618);
+    display: flex;
+    align-items: center;
+
+}
+footer .confirmacao{
+    width: 80%;
+    height: 77%;
+    background-color: grey;
+    margin: auto;
+    border-radius: 47%;
+   text-align: center;
+   display: flex;
+   align-items: center;
+}
+.confirmacao p{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+ footer .habilit{
+   background-color: green;
+}
+@media(max-width:700px){
+    header,main,footer{
+        width: 80vw;
+    }
+}
